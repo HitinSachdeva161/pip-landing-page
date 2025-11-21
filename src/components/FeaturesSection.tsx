@@ -1,4 +1,5 @@
 import React from "react";
+import pipVideo from "../assets/new assets/pip_55s_final.mp4";
 
 export const FeaturesSection = (): JSX.Element => {
   const buttons = [
@@ -22,13 +23,18 @@ export const FeaturesSection = (): JSX.Element => {
       </h2>
 
       <div
-        className="flex w-full max-w-[90vw] md:max-w-[800px] lg:max-w-[960px] h-[200px] sm:h-[280px] md:h-[450px] lg:h-[540px] items-center justify-center p-6 md:p-12 bg-[#8a8888] rounded-[12px] md:rounded-[16px]"
-        role="region"
-        aria-label="Video player placeholder"
+        className="flex w-full max-w-[90vw] md:max-w-[800px] lg:max-w-[960px] h-[200px] sm:h-[280px] md:h-[450px] lg:h-[540px] items-center justify-center p-6 md:p-12  rounded-[12px] md:rounded-[16px]"
+        aria-label="Video player"
       >
-        <div className="[font-family:'Roboto-Regular',Helvetica] font-normal text-white text-[16px] md:text-[24px] text-center tracking-[0] leading-[normal]">
-          Video
-        </div>
+        <video
+          controls
+          className="w-full h-[full] rounded-[12px] md:rounded-[16px] object-contain"
+          role="region"
+          aria-label="Project overview video"
+        >
+          <source src={pipVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <nav
