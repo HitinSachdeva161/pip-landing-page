@@ -1,5 +1,7 @@
 import React from "react";
 import pipVideo from "../assets/new assets/pip_55s_final.mp4";
+import pipThumbnail from "../assets/new assets/thumbnail.png";
+
 
 export const FeaturesSection = (): JSX.Element => {
   const buttons = [
@@ -28,6 +30,7 @@ export const FeaturesSection = (): JSX.Element => {
       >
         <video
           controls
+          poster={pipThumbnail}
           className="w-full h-[full] rounded-[12px] md:rounded-[16px] object-contain"
           role="region"
           aria-label="Project overview video"
