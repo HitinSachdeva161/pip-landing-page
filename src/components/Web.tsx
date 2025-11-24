@@ -32,7 +32,7 @@ export const Web = (): JSX.Element => {
       >
         <div className="relative w-[70px] md:w-[81.82px] h-[26px] md:h-[30px] aspect-[2.73]">
           <img
-            className="absolute -top-px left-0 w-[80px] md:w-[88px] h-[30px] md:h-[33px]"
+            className="absolute top-1/2 -translate-y-1/2 left-0 w-[68px] md:w-[75px] h-[24px] md:h-[28px]"
             alt="Company Logo"
             src={image}
           />
@@ -57,7 +57,7 @@ export const Web = (): JSX.Element => {
         <button
           type="button"
           aria-label="Open menu"
-          className="sm:hidden inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#f3f2fa] text-[#453b55] hover:opacity-90"
+          className="sm:hidden inline-flex items-center justify-center w-8 h-8 rounded-full  text-[#453b55] hover:opacity-90"
           onClick={() => setIsMenuOpen((v) => !v)}
         >
           {/* <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
