@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import teamIllustration from "../assets/Hero/Pipo_Shy.png";
+import teamIllustration from "../assets/new assets/PIP_Message.png";
 
 export const TeamSection = (): JSX.Element => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });

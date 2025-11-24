@@ -7,15 +7,30 @@ import pipoCoffee from "../assets/Hero/Pipo_Cofee Cup.png";
 
 export const MobilePreviewSection = (): JSX.Element => {
   return (
-    <section className="relative w-full sm:min-h-[85vh] md:h-[100vh] bg-[#dcd8f0] overflow-hidden">
-      {/* Container for all content */}
-      <div className="relative w-full max-w-[1400px] mx-auto flex flex-col gap-6 md:gap-0 sm:min-h-[85vh] md:h-[100vh] md:justify-between px-4 pt-[4rem] sm:pt-[5rem] md:pt-[8rem] pb-0">
-        
+//     <section className="relative w-full min-h-[95vh] sm:min-h-[90vh] md:h-[100vh] bg-[#dcd8f0] overflow-hidden">
+//       {/* Container for all content */}
+// <div className="relative w-full max-w-[1400px] mx-auto 
+//   flex flex-col justify-between h-full
+//   gap-6 md:gap-0 
+//   sm:min-h-[85vh] md:h-[100vh]
+//   px-4 pt-[4rem] sm:pt-[5rem] md:pt-[8rem] pb-4">    
+<section className="relative w-full bg-[#dcd8f0] overflow-hidden">
+  <div
+    className="relative w-full max-w-[1400px] mx-auto
+    flex flex-col justify-between
+    min-h-[95vh] sm:min-h-[90vh] md:min-h-[100vh]
+    gap-6 md:gap-0
+    px-4 pt-[4rem] sm:pt-[5rem] md:pt-[8rem] pb-0"
+  >    
         {/* Main content - Centered */}
         <div className="relative z-20 flex flex-col items-center justify-center gap-4 sm:gap-5 md:gap-7 text-center w-full max-w-[700px] mx-auto pt-4 sm:pt-8 md:pt-12">
           
           {/* Headline */}
-          <h1 className="[font-family:'Roboto-Medium',Helvetica] font-medium text-[#3d3555] text-[30px] sm:text-[38px] md:text-[46px] lg:text-[50px] leading-[1.2] tracking-[-0.5px] px-4">
+          <h1    className="[font-family:'Roboto-Medium',Helvetica] font-medium text-[#3d3555]
+  text-[30px] sm:text-[38px] md:text-[46px] lg:text-[50px]
+  leading-[1.2] tracking-[-0.5px] px-4
+  mt-16 sm:mt-10 md:mt-0
+  sm:whitespace-normal md:whitespace-nowrap">
             Worried about meeting people?
             <br />
             PIP got you
