@@ -29,7 +29,7 @@ export const MobilePreviewSection = (): JSX.Element => {
           <h1    className="[font-family:'Roboto-Medium',Helvetica] font-medium text-[#3d3555]
   text-[30px] sm:text-[38px] md:text-[46px] lg:text-[50px]
   leading-[1.2] tracking-[-0.5px] px-4
-  mt-16 sm:mt-10 md:mt-0
+  mt-[4.5rem] sm:mt-10 md:mt-0
   sm:whitespace-normal md:whitespace-nowrap">
             Worried about meeting people?
             <br />
@@ -52,7 +52,7 @@ export const MobilePreviewSection = (): JSX.Element => {
         {/* Phone mockup - Three phones in one image */}
         <div className="relative z-20 flex items-end justify-center w-full">
           <img
-            className="w-full max-w-[340px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[900px] h-auto sm:h-[80vh] md:h-auto md:max-h-[50vh] object-contain object-bottom drop-shadow-2xl"
+            className="w-full max-w-[390px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[900px] h-auto sm:h-[80vh] md:h-auto md:max-h-[50vh] object-contain object-bottom drop-shadow-2xl"
             alt="PIP mobile app mockups showing login, AR practice, and feedback screens"
             src={landingMockup}
           />
