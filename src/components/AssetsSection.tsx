@@ -10,9 +10,9 @@ export const AssetsSection = (): JSX.Element => {
   ];
 
   const actionButtons = [
-    { id: 1, label: "View Proposal" },
-    { id: 2, label: "View Design Files" },
-    { id: 3, label: "View GitHub" },
+    { label: "View Proposal", ariaLabel: "View project proposal" , href: "https://www.freepik.com/free-vector/abstract-comin-soon-promo-template-with-brush-stroke-effect_225668615.htm#fromView=keyword&page=1&position=1&uuid=62a3311a-26e6-435b-891c-bd21b25c0404&query=Coming+soon+red" },
+    { label: "View Design Files", ariaLabel: "View design files" , href: "https://www.figma.com/design/bvZP4XgMNTkdLQ81bdWbTe/PIP-Design?node-id=0-1&t=EXMdYw0cTIEAZl0k-1" },
+    { label: "View GitHub", ariaLabel: "View GitHub repository", href: "https://github.com/vipuljuneja/Capstone" }
   ];
 
   return (
@@ -43,15 +43,18 @@ export const AssetsSection = (): JSX.Element => {
             aria-label="Footer actions"
           >
             {actionButtons.map((button) => (
-              <button
-                key={button.id}
+              <a
+                key={button.label}
+                href={button.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex w-full md:w-auto items-center justify-center min-w-[190px] md:min-w-[160px] h-[48px] md:h-[50px] px-6 md:px-8 bg-white rounded-[100px] hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#3e3153] transition-all"
                 type="button"
               >
                 <span className="[font-family:'Roboto-Medium',Helvetica] font-medium text-[#3e3153] text-[14px] md:text-[15px] tracking-[0] leading-[normal] whitespace-nowrap">
                   {button.label}
                 </span>
-              </button>
+              </a>
             ))}
           </nav>
         </div>
