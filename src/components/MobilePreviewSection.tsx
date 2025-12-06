@@ -41,6 +41,7 @@ export const MobilePreviewSection = (): JSX.Element => {
             className="inline-flex items-center justify-center min-w-[190px] h-[52px] md:h-[56px] px-10 md:px-12 bg-[#453b55] hover:bg-[#5a4d6b] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#453b55]/50"
             type="button"
             aria-label="Download project proposal"
+            onClick={() => window.open('https://drive.google.com/file/d/1oD-VHGhwlZiQ3R1wlu-ynogYbzjDYl_R/view?usp=sharing', '_blank')}
           >
             <span className="[font-family:'Roboto-Medium',Helvetica] font-medium text-white text-[15px] md:text-[16px] tracking-wide">
               Download Proposal

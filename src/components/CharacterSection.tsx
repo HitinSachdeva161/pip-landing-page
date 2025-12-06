@@ -9,6 +9,7 @@ interface TeamMember {
   name: string;
   role: string;
   linkedin: string;
+  github?: string;
   image: string;
   imageAlt: string;
 }
@@ -33,6 +34,7 @@ export const CharacterSection = (): JSX.Element => {
       name: "Vipul Juneja",
       role: "Dev lead • Back-end developer",
       linkedin: "vipuljuneja",
+      github: "vipuljuneja",
       image: vipulImage as unknown as string,
       imageAlt: "Photo of Vipul Juneja",
     },
@@ -40,6 +42,7 @@ export const CharacterSection = (): JSX.Element => {
       name: "Hitin Sachdeva",
       role: "Front-end developer",
       linkedin: "hitinsachdeva",
+      github: "HitinSachdeva161",
       image: hitinImage as unknown as string,
       imageAlt: "Photo of Hitin Sachdeva",
     },
@@ -47,6 +50,7 @@ export const CharacterSection = (): JSX.Element => {
       name: "Sukhbir Singh",
       role: "Front-end developer",
       linkedin: "sukhbirsinghdevs",
+      github: "Sukhmahey",
       image: sukhbirImage as unknown as string,
       imageAlt: "Photo of Sukhbir Singh",
     },
@@ -154,7 +158,7 @@ export const CharacterSection = (): JSX.Element => {
                       </svg>
                     </a>
                     <a
-                      href={`https://github.com/${member.linkedin}`}
+                      href={`https://github.com/${member.github}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[#584F95] hover:text-[#4752c4] transition-colors"

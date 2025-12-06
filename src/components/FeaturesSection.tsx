@@ -5,7 +5,7 @@ import pipThumbnail from "../assets/new assets/thumbnail.png";
 
 export const FeaturesSection = (): JSX.Element => {
   const buttons = [
-    { label: "View Proposal", ariaLabel: "View project proposal" , href: "https://www.freepik.com/free-vector/abstract-comin-soon-promo-template-with-brush-stroke-effect_225668615.htm#fromView=keyword&page=1&position=1&uuid=62a3311a-26e6-435b-891c-bd21b25c0404&query=Coming+soon+red" },
+    { label: "View Proposal", ariaLabel: "View project proposal" , href: "https://drive.google.com/file/d/1oD-VHGhwlZiQ3R1wlu-ynogYbzjDYl_R/view?usp=sharing" },
     { label: "View Design Files", ariaLabel: "View design files" , href: "https://www.figma.com/design/bvZP4XgMNTkdLQ81bdWbTe/PIP-Design?node-id=0-1&t=EXMdYw0cTIEAZl0k-1" },
     { label: "View GitHub", ariaLabel: "View GitHub repository", href: "https://github.com/vipuljuneja/Capstone" },
   ];
