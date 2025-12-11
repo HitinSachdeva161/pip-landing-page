@@ -10,6 +10,7 @@ interface TeamMember {
   role: string;
   linkedin: string;
   github?: string;
+  website?: string;
   image: string;
   imageAlt: string;
 }
@@ -20,6 +21,7 @@ export const CharacterSection = (): JSX.Element => {
       name: "Poppy Prasartset",
       role: "Co-PM • Product design lead",
       linkedin: "poppy-prasartset",
+      website: "https://pip-wmdd.vercel.app/",
       image: poppyImage as unknown as string,
       imageAlt: "Photo of Poppy Prasartset",
     },
@@ -27,6 +29,7 @@ export const CharacterSection = (): JSX.Element => {
       name: "Suro Kim",
       role: "Co-PM • Product designer",
       linkedin: "suro-kim",
+      website: "https://pip-wmdd.vercel.app/",
       image: suroImage as unknown as string,
       imageAlt: "Photo of Suro Kim",
     },
@@ -34,6 +37,7 @@ export const CharacterSection = (): JSX.Element => {
       name: "Vipul Juneja",
       role: "Dev lead • Back-end developer",
       linkedin: "vipuljuneja",
+      website: "Vipuljuneja.com",
       github: "vipuljuneja",
       image: vipulImage as unknown as string,
       imageAlt: "Photo of Vipul Juneja",
@@ -42,6 +46,7 @@ export const CharacterSection = (): JSX.Element => {
       name: "Hitin Sachdeva",
       role: "Front-end developer",
       linkedin: "hitinsachdeva",
+      website: "https://hitin-sachdeva-portfolio.netlify.app/",
       github: "HitinSachdeva161",
       image: hitinImage as unknown as string,
       imageAlt: "Photo of Hitin Sachdeva",
@@ -49,6 +54,7 @@ export const CharacterSection = (): JSX.Element => {
     {
       name: "Sukhbir Singh",
       role: "Front-end developer",
+      website: "https://pip-wmdd.vercel.app/",
       linkedin: "sukhbirsinghdevs",
       github: "Sukhmahey",
       image: sukhbirImage as unknown as string,
@@ -105,7 +111,7 @@ export const CharacterSection = (): JSX.Element => {
                       </svg>
                     </a>
                     <a
-                      href={`https://${member.linkedin}.com`}
+                      href={member.website}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[#584F95] hover:text-[#4752c4] transition-colors"
@@ -169,7 +175,7 @@ export const CharacterSection = (): JSX.Element => {
                       </svg>
                     </a>
                     <a
-                      href={`https://${member.linkedin}.com`}
+                      href={member.website?.startsWith('http') ? member.website : `https://${member.website}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[#584F95] hover:text-[#4752c4] transition-colors"
